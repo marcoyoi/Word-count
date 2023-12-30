@@ -24,11 +24,14 @@ Run the program.
 Display the output.
 
 ## PROGRAM:
-```
+```py
+#Program to find the number of words in a file
 #Developed by: Meyyappan.T
-#Register Number: 212223240086
+#Register no:212223240086
 def program():
     count=0
+    with open("text.txt","w") as f:
+        f.write("This is a sample text to count the number of words")
     with open("text.txt","r") as f:
         for data in f:
             words=data.split()
@@ -39,9 +42,7 @@ program()
 ```
 
 ### OUTPUT:
-![image](https://github.com/marcoyoi/Word-count/assets/128804366/79d06a34-1652-439b-aca7-e6b87f703910)
-![image](https://github.com/marcoyoi/Word-count/assets/128804366/f6a8fe8c-eea3-4eaf-8231-88d6f43c0487)
-![image](https://github.com/marcoyoi/Word-count/assets/128804366/0ea1393d-5eb2-4b8a-aa98-30b8c2c4b06e)
+![Alt text](<word count.png>)
 
 ## RESULT:
 Thus the program is written to find the word count from a text.
